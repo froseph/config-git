@@ -1,3 +1,5 @@
 [user]
 	name = Joseph Liu
 	email = froseph@gmail.com
+[color]
+	ui = true
