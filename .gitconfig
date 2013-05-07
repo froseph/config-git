@@ -8,5 +8,11 @@
     lg = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
     co = checkout
     report = "!git log --since 'last week' --author `git config user.email` --graph --pretty=short"
+    snapshot = !git stash save "snapshot: $(date)" && git stash apply "stash@{0}"
 [push]
 #	default = simple
+[diff]
+	algorithm = patience
+
+[push]
+	default = simple
