@@ -9,10 +9,9 @@
     co = checkout
     report = "!git log --since 'last week' --author `git config user.email` --graph --pretty=short"
     snapshot = !git stash save "snapshot: $(date)" && git stash apply "stash@{0}"
-[push]
-#	default = simple
+#    prune = remote prune origin
 [diff]
-	algorithm = patience
-
+    algorithm = patience
+    #--ignore-space-at-eol -b -w --ignore-blank-lines
 [push]
 	default = simple
