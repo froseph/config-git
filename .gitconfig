@@ -15,3 +15,5 @@
     #--ignore-space-at-eol -b -w --ignore-blank-lines
 [push]
 	default = simple
+[core]
+	trustctime = false
