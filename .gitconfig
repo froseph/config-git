@@ -17,3 +17,9 @@
 	default = simple
 [core]
 	trustctime = false
+	excludesfile = /Users/froseph/.gitignore
+[pager]
+	branch = cat
+	grep = cat
+[init]
+	defaultBranch = main
